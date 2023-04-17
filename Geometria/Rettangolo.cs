@@ -51,9 +51,6 @@ namespace Geometria
 
             for (int i = 0; i < altezzaRettangolo; i++)
             {
-               
-                
-                
                 for(int j = 0; j < baseRettangolo; j++)
                 {
                     /*
@@ -69,16 +66,13 @@ namespace Geometria
                     else if ((j == baseRettangolo -1) || (j == 0))
                     {
                        Console.Write("|");
-                    }else Console.Write("   ");
+                    }else Console.Write("  ");
                    
                     if( j == baseRettangolo -1) { Console.WriteLine(""); }
 
 
                 }
-
             }
-
         }
-
     }
 }
