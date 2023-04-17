@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -43,6 +44,41 @@ namespace Geometria
         }
 
 
+
+        public void DisegnaRettangolo()
+        {
+            
+
+            for (int i = 0; i < altezzaRettangolo; i++)
+            {
+               
+                
+                
+                for(int j = 0; j < baseRettangolo; j++)
+                {
+                    /*
+                    if (j == i)
+                    {
+                        Console.Write("*");
+                    }else 
+                    */
+                    if ((i == 0) || ( i == altezzaRettangolo-1))
+                    {
+                        Console.Write("--");
+                    }
+                    else if ((j == baseRettangolo -1) || (j == 0))
+                    {
+                       Console.Write("|");
+                    }else Console.Write("   ");
+                   
+                    if( j == baseRettangolo -1) { Console.WriteLine(""); }
+
+
+                }
+
+            }
+
+        }
 
     }
 }

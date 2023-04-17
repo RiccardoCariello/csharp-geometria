@@ -18,9 +18,6 @@ do
     altezzaRettangolo = int.Parse(inputUtente);
 } while ((baseRettangolo <= 0) || (altezzaRettangolo <= 0));
 
-
-
-
 Rettangolo myRettangolo = new Rettangolo(baseRettangolo, altezzaRettangolo);
 
 
@@ -30,6 +27,9 @@ myRettangolo.CalcolaPerimetro();
 
 MostraRettangolo();
 
+Console.WriteLine("\n Ed ora l'esclusivo programma in alpha di disegno del rettangolo : \n");
+
+myRettangolo.DisegnaRettangolo();
 
 void MostraRettangolo()
 {
@@ -38,4 +38,5 @@ void MostraRettangolo()
     Console.WriteLine("altezza: " + myRettangolo.altezzaRettangolo + "cm");
     Console.WriteLine("Perimetro: " + myRettangolo.perimetro + "cm");
     Console.WriteLine("Area: " + myRettangolo.area + "cm2");
+    Console.WriteLine("----------------------");
 }
