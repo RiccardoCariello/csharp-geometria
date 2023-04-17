@@ -47,28 +47,38 @@ namespace Geometria
 
         public void DisegnaRettangolo()
         {
-            
+            /*
+            int latoOrizzontale;
+            int latoVerticale;
+            string spazioInterno = "  ";
+            */
+
+            string latoOrizzontale = "--";
+            string latoVerticale = "|";
+            string spazioInterno = "--";
 
             for (int i = 0; i < altezzaRettangolo; i++)
             {
                 for(int j = 0; j < baseRettangolo; j++)
                 {
-                    /*
-                    if (j == i)
+
+                    //latoOrizzontale = j;
+                    //latoVerticale = i;
+
+                    
+                    if ((i== 0 || i == altezzaRettangolo-1) && (j==0 || j == baseRettangolo -1))
                     {
                         Console.Write("*");
-                    }else 
-                    */
-                    if ((i == 0) || ( i == altezzaRettangolo-1))
+                    }else if ((i == 0) || ( i == altezzaRettangolo-1))
                     {
-                        Console.Write("--");
+                        Console.Write(latoOrizzontale);
                     }
                     else if ((j == baseRettangolo -1) || (j == 0))
                     {
-                       Console.Write("|");
-                    }else Console.Write("  ");
+                       Console.Write(latoVerticale);
+                    }else Console.Write(spazioInterno);//spazi interni
                    
-                    if( j == baseRettangolo -1) { Console.WriteLine(""); }
+                    if( j == baseRettangolo -1) { Console.WriteLine(""); }//va a capo
 
 
                 }
